@@ -1,0 +1,38 @@
+# REST Client (humao.rest-client) for Visual Studio Code
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+### Login to existing user account
+POST /api/login HTTP/1.1
+Authorization: Bearer aWRlbnRpdHkgYW5kIGFjY2VzcyBtYW5hZ2VtZW50IHN5c3RlbQ==
+Content-Type: application/json
+Host: [::1]:8000
+Content-Length: 51
+
+{
+  "username": "test1",
+  "password": "p@sSc0d9"
+}
+
+### Register new user account
+POST /api/register HTTP/1.1
+Authorization: Bearer aWRlbnRpdHkgYW5kIGFjY2VzcyBtYW5hZ2VtZW50IHN5c3RlbQ==
+Content-Type: application/json
+Host: [::1]:8000
+Content-Length: 78
+
+{
+  "username": "test2",
+  "password": "p@sSc0d9",
+  "email": "abc@test.com"
+}
+
+### Forgot password of existing user account
+POST /api/forgot-password HTTP/1.1
+Authorization: Bearer aWRlbnRpdHkgYW5kIGFjY2VzcyBtYW5hZ2VtZW50IHN5c3RlbQ==
+Content-Type: application/json
+Host: [::1]:8000
+Content-Length: 36
+
+{
+  "email": "isurfer21@gmail.com"
+}
